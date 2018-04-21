@@ -5,6 +5,28 @@
   <title>HPlus Sport</title>
   <link rel="stylesheet" href="css/style.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- <script type="text/javascript" src="../jquery-3.0.0.js"></script> -->
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+
+  <script type = "text/javascript">
+  $("document").ready(function(){
+    $("h2[data-type=vitamin]").css("background-color", "darkgreen");
+  $("h2[data-type=mineralwater]").css("background-color", "purple");
+  $("h2[data-type=proteinbar]").css("background-color", "lightblue");
+  });
+
+  function replacementFn() {
+        if ($(this).text().indexOf("1") != -1) {
+            return "<p>This is paragraph uno</p>";
+        }
+        else {
+            return this.outerHTML;
+        }
+    }
+
+
+
+  </script>
 </head>
 <body>
 
